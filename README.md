@@ -1,6 +1,7 @@
 # Todo JS
  A project made for [The Odin Project](https://www.theodinproject.com/courses/javascript/lessons/todo-list)
- Demonstrates usage of factory functions, DOM manipulation, modules and event listeners before moving onto a framework 
+ Demonstrates usage of factory functions, DOM manipulation, modules and event listeners before moving onto a framework
+  
  Hosted [here](https://www.koken-y.github.io/todo)
 
 
