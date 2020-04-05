@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+</head>
+
+<body>
+    <br>
+    <header class='page-header'>
+        <div class='title'>
+            <h1>ToDo</h1>
+        </div>
+    </header>
+    <br>
+    <div class='container'>
+        <br>
+        <div class="row">
+            <div class="twelve column controls">
+                <input type="button" class='button-primary' id='newProject' value="New Project">
+            </div>
+        </div>
+        <div class="row">
+            <div class="twelve column">
+                <h4>Projects</h4>
+                <table class="u-full-width" id='projects'>
+                </table>
+            </div>
+        </div>
+        <br>
+        <br>
+        <div class="row">
+            <div class="twelve column controls">
+                <input type="button" class='button-primary' id='newTodo' value="New Todo">
+                <input type="button" class='button' id = 'clearCompleted' value="Clear Completed">
+            </div>
+        </div>
+        <div class="row">
+            <div class="twelve column">
+                <h4 id = 'todosHeading'>Todos</h4>
+                <table class="u-full-width" id='todos'>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <form>
+        <div class='form container modal closed' id='projectModal'>
+            <div class="row">
+                <div class="twelve columns">
+                    <label for="projectName">Name</label>
+                    <input class="u-full-width" type="text" placeholder="Your project's name" id="projectName" required>
+                </div>
+                <div class="twelve columns">
+                    <label for="projectDescription">Description</label>
+                    <textarea class="u-full-width" placeholder="A short description about your project..."
+                        id="projectDescription" required></textarea>
+                </div>
+            </div>
+            <input class="button-primary" type="submit" value="Add Project" id='addProject'>
+            <input class="button" type="button" value="Cancel" id='cancelProject'>
+        </div>
+    </form>
+
+    <form>
+        <div class='form container modal closed' id='todoModal'>
+            <div class="row">
+                <div class="twelve columns">
+                    <label for="todoName">Name</label>
+                    <input class="u-full-width" type="text" placeholder="Todo Name" id="todoName" required>
+                </div>
+                <div class="twelve columns">
+                    <label for="todoDescription">Description</label>
+                    <textarea class="u-full-width" placeholder="A short description about your todo..."
+                        id="todoDescription" required></textarea>
+                </div>
+                <div class = "twelve columns">
+                    <label for='todoDueDate'>Due Date</label>
+                    <input type = "date" id = "todoDueDate">
+                </div>
+                <div class = "twelve columns">
+                    <label for='todoPriority'>Priority</label>
+                    <input type = "checkbox" id = "todoPriority">
+                </div>
+            </div>
+            <input class="button-primary" type="submit" value="Add Todo" id='addTodo'>
+            <input class="button" type="button" value="Cancel" id='cancelTodo'>
+        </div>
+    </form>
+
+    <div class='modal-overlay closed' id='modal-overlay'></div>
+    
+    <script src='bundle.js'></script>
+</body>
+
+</html>
